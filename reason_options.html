@@ -1,0 +1,62 @@
+<!-- working -->
+<div id="spamModal" class="reveal-modal medium open" data-reveal="" aria-hidden="true" role="dialog" style="display: block; opacity: 1; visibility: visible; top: 100px;"><div class="spam-success">
+  <h3>Thank you for alerting MyMSTeam to content on the site.</h3>
+  <p>
+    We will review this post shortly.<br>
+    <a href="/about/guidelines">Read more about our community guidelines</a>
+  </p>
+  <div class="reveal-actions">
+    <a class="block_user wb-link" data-user-id="58e2dd200d858236913a760e" data-disable-with="block user" data-confirmable="false" href="#" aria-label="block user">block user</a>
+    <a class="close-reveal-custom ob-link" aria-label="Close">close</a>
+  </div>
+</div>
+
+<div class="spam-form">
+  <h3>Report Content</h3>
+  <p>Please select a reason below as to why you feel this content has treaded on our community guidelines: (Reporting content is completely anonymous)</p>
+  <form novalidate="novalidate" class="simple_form new_spam" id="new_spam" action="/spam" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓">
+  <span style="display: none;" id="report_reason_errors" class="inline-errors"></span>
+
+  <div class="report-inputs">
+    <input type="hidden" name="actionable_type" id="actionable_type" value="Post">
+    <input type="hidden" name="actionable_id" id="actionable_id" value="58e2df010d858213e4671696">
+    <div class="input hidden spam_spammable_type"><input class="hidden" type="hidden" value="Post" name="spam[spammable_type]" id="spam_spammable_type"></div>
+    <div class="input hidden spam_spammable_id"><input class="hidden" type="hidden" value="58e2df010d858213e4671696" name="spam[spammable_id]" id="spam_spammable_id"></div>
+
+      <div class="input select optional spam_reports_reason">
+        <label class="select optional control-label" for="spam_reports_reason">Reason</label>
+        <select class="select optional" name="spam[reports][reason]" id="spam_reports_reason">
+          <option value=""></option>
+          <option value="judgmental">Posting with a judgmental tone.</option>
+          <option value="promotion">Promotion, or asking for members contact information to sell products, websites, fundraisers, or seminars.</option>
+          <option value="repeating">Posting of the same content over and over again.</option>
+          <option value="selling">Selling or distributing of pharmaceutical products.</option>
+          <option value="instructing">Prescribing or instructing what others should do.</option>
+          <option value="illegal_activity">References to illegal activity, professional malpractice or health code violations.</option>
+          <option value="research">Promoting or conducting research on the site.</option>
+          <option value="proselytizing">Proselytizing or disrespecting a member's point of view, religious or not.</option>
+          <option value="all_caps">Posting content in all-caps.</option>
+          <option value="offensive">Horribly offensive language directed at others.</option>
+          <option value="hate">Posting of hate, misogynistic, sexist, or racist content.</option>
+          <option value="material">Posting pictures, profile pictures, or text that contain offensive material.</option>
+          <option value="hostile">Posting of hostile content towards any member of the community, including those who work here.</option>
+          <option value="dating">Unwanted advances either sexual or romantic in nature with a focus on dating.</option>
+          <option value="profiles">More than one profile on the site</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="input text optional spam_reports_reason_other">
+        <label class="text optional control-label" for="spam_reports_reason_other">Please give a reason</label>
+        <textarea class="text optional" name="spam[reports][reason_other]" id="spam_reports_reason_other"></textarea>
+      </div>
+  </div>
+
+  <div class="reveal-actions">
+    <input type="submit" name="commit" value="report content" data-disable-with="posting..." class="button">
+  </div>
+
+  </form>
+</div>
+
+<a class="close-reveal-modal" aria-label="Close">×</a>
+</div>
